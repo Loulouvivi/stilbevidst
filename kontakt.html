@@ -13,20 +13,20 @@
 
 <!-- NAVIGATION -->
     <header>
-        <a href="index.html" class="logo-button">
-            <img src="img/logo.png" alt="StilBevidst logo">
+         <a href="index.html" class="logo-button" aria-label="Til forsiden">
+            <img src="img/logo.png" alt="StilBevidst">
         </a>
 
-        <nav id="nav"> 
+        <nav id="nav" role="navigation" aria-label="Hovedmenu">
             <ul>
                 <li><a href="index.html">OM OS</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+                <li><a href="kontakt.html" class="active" aria-current="page">KONTAKT</a></li>
             </ul>
         </nav> 
 
-        <button id="bars">
-            <i class="fa-solid fa-bars"></i>
+        <button id="bars" aria-controls="nav" aria-expanded="false" aria-label="Åbn menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
     </header>
 
@@ -36,7 +36,7 @@
     <section class="kontakt-hero">
       <div class="container">
         <h1>Kontakt StilBevidst</h1>
-        <p>Har du spørgsmål, idéer eller ønsker til indhold, er du velkommen til at sende en besked</p>
+        <p>Har du spørgsmål, idéer eller ønsker til indhold, er du velkommen til at sende os en besked!</p>
       </div>
     </section>
 
