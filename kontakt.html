@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bro5xrk.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/34bd362967.js" crossorigin="anonymous"></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+  <body>
+
+<!-- NAVIGATION -->
+    <header>
+        <a href="index.html" class="logo-button">
+            <img src="img/logo.png" alt="StilBevidst logo">
+        </a>
+
+        <nav id="nav"> 
+            <ul>
+                <li><a href="index.html">OM OS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+            </ul>
+        </nav> 
+
+        <button id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+  <main>
+
+    <!-- KONTAKT HERO -->
+    <section class="kontakt-hero">
+      <div class="container">
+        <h1>Kontakt StilBevidst</h1>
+        <p>Har du spørgsmål, idéer eller ønsker til indhold, er du velkommen til at sende en besked</p>
+      </div>
+    </section>
+
+    <!-- KONTAKT FORM -->
+    <section class="kontakt-section">
+      <div class="container">
+        <form class="kontakt-form" action="mailto:info@stilbevidst.dk" method="post" enctype="text/plain">
+          <label for="navn">Navn</label>
+          <input id="navn" type="text" placeholder="Dit navn" required>
+
+          <label for="mail">E-mail</label>
+          <input id="mail" type="email" placeholder="din@mail.dk" required>
+
+          <label for="besked">Besked</label>
+          <textarea id="besked" rows="5" placeholder="Skriv din besked her" required></textarea>
+
+          <button type="submit" class="kontakt-btn">Send besked</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>StilBevidst</h3>
+        <p>Et univers for miljøbevidste stilvalg.</p>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Følg med</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 StilBevidst · Designet med omtanke</p>
+    </div>
+  </footer>
+
+  
+
+</body>
+</html>

@@ -3,45 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StilBevidst</title>
+    <title>Om os</title>
     <link rel="stylesheet" href="https://use.typekit.net/bro5xrk.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/34bd362967.js" crossorigin="anonymous"></script>
     <script src="js/navigation.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-     <header>
+
+<!-- NAVIGATION -->
+    <header>
         <a href="index.html" class="logo-button">
-            <img src="img/Logo.png" alt="StilBevidst logo">
+            <img src="img/logo.png" alt="StilBevidst logo">
         </a>
 
-        <nav>
+        <nav id="nav"> 
             <ul>
-                <!-- li*3>a -->
-                <li><a href="#">OM OS</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">KONTAKT</a></li>
+                <li><a href="index.html" class="active">OM OS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
             </ul>
-        </nav>
+        </nav> 
 
-    <button id="bars">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+        <button id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
 
-     </header>
-
-     <!-- Hovedindhold -->
+<!-- HOVEDINDHOLD -->
      <main>
-        <section>
-            <div>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
                 <h1>Miljøbevidst på den stilrene måde</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At modi pariatur labore asperiores sit perferendis similique necessitatibus rerum et officia, excepturi eveniet, delectus nulla nihil, facilis deserunt ipsam. Beatae, eum?</p>
+                <p class="visually-hidden">
+                Baggrunden viser farverigt tøj hængende på et stativ i naturen, som symboliserer bæredygtighed og æstetik.
+                </p>
+                <p>StilBevidst inspirerer til bæredygtige valg gennem mode, æstetik og omtanke.</p>
+                <a href="blog.html" class="hero-btn">Bliv StilBevidst</a>
             </div>
-
-            <img src="img/Tøjstativ.png" alt="Stativ med genbrugstøj">
         </section>
+
+        <!-- INTRODUKTION -->
+        <section class="intro">
+            <div class="container">
+                <h2>Velkommen til StilBevidst</h2>
+                <p>
+                Hos <strong>StilBevidst</strong> tror vi på, at mode og omtanke kan gå hånd i hånd.
+                Her finder du inspiration til at forlænge tøjets levetid, handle med omtanke
+                og skabe en garderobe, du føler dig godt tilpas i - både æstetisk og etisk.
+                </p>
+                <p>
+                Vi deler simple guides, tips og tanker om bæredygtighed i hverdagen, så du kan
+                tage mere bevidste valg - uden at gå på kompromis med stilen.
+                </p>
+            </div>
+        </section>
+
+          <!-- INSPIRATION -->
+          <section class="inspiration">
+                <div class="container">
+                    <h2>Seneste inspiration</h2>
+                    <ul>
+                        <li> <a href="blogpost.html">♻️ Sådan plejer du dit tøj, så det holder længere</a> </li>
+                        <li>👗 5 tips til at købe mindre - men bedre</li>
+                        <li>🌿 Inspiration: En capsule wardrobe i naturlige farver</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- OM STILBEVIDST -->
+            <section class="about">
+                <div class="container">
+                    <h2>Om StilBevidst</h2>
+                    <p>
+                    StilBevidst er skabt ud fra en kærlighed til æstetik og ansvarlighed.
+                    Vi ønsker at vise, at bæredygtighed ikke handler om perfekt levevis -
+                    men om små valg, der gør en forskel.
+                    </p>
+                    <p>
+                    Gennem bevidst mode og minimalistiske vaner kan vi sammen skabe en stil,
+                    der holder - for både dig og planeten.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CALL TO ACTION -->
+            <section class="cta">
+                <div class="container">
+                    <p>Følg med for inspiration, guides og små refleksioner om en mere bevidst hverdag.</p>
+                    <a href="blog.html" class="hero-btn">Gå til blogposts</a>
+                </div>
+            </section>
+
      </main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>StilBevidst</h3>
+      <p>Et univers for miljøbevidste stilvalg.</p>
+    </div>
+
+    <div class="footer-socials">
+      <h4>Følg med</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 StilBevidst · Designet med omtanke</p>
+  </div>
+</footer>
+
     
 </body>
 </html>
