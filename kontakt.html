@@ -25,7 +25,12 @@
             </ul>
         </nav> 
 
-        <button id="bars" aria-controls="nav" aria-expanded="false" aria-label="Åbn menu">
+        <button 
+        id="bars" 
+        type="button" 
+        aria-controls="nav" 
+        aria-expanded="false" 
+        aria-label="Åbn menu">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
     </header>
@@ -43,17 +48,18 @@
     <!-- KONTAKT FORM -->
     <section class="kontakt-section">
       <div class="container">
+
         <form class="kontakt-form" action="mailto:info@stilbevidst.dk" method="post" enctype="text/plain">
-          <label for="navn">Navn</label>
-          <input id="navn" type="text" placeholder="Dit navn" required>
+            <label for="navn">Navn</label>
+            <input id="navn" type="text" placeholder="Dit navn" required>
 
-          <label for="mail">E-mail</label>
-          <input id="mail" type="email" placeholder="din@mail.dk" required>
+            <label for="mail">E-mail</label>
+            <input id="mail" type="email" placeholder="din@mail.dk" required>
 
-          <label for="besked">Besked</label>
-          <textarea id="besked" rows="5" placeholder="Skriv din besked her" required></textarea>
+            <label for="besked">Besked</label>
+            <textarea id="besked" rows="5" placeholder="Skriv din besked her" required></textarea>
 
-          <button type="submit" class="kontakt-btn">Send besked</button>
+            <button type="submit" class="kontakt-btn">Send besked</button>
         </form>
 
       </div>
@@ -61,27 +67,46 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h3>StilBevidst</h3>
-        <p>Et univers for miljøbevidste stilvalg.</p>
-      </div>
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
 
-      <div class="footer-socials">
-        <h4>Følg med</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Pinterest</a></li>
-        </ul>
-      </div>
-    </div>
+            <div class="footer-newsletter">
+                <h4>Tilmeld dig vores nyhedsbrev</h4>
+                <p>Få tips til en mere bevidst garderobe - direkte i din inbox!</p>
 
-    <div class="footer-bottom">
-      <p>© 2025 StilBevidst · Designet med omtanke</p>
-    </div>
-  </footer>
+                <form class="newsletter-form">
+                    <label for="newsletter-email" class="visually-hidden">
+                    Skriv din emailadresse for at tilmelde nyhedsbrevet
+                    </label>
+                    <input
+                      id="newsletter-email"
+                     name="email"
+                     type="email" 
+                     placeholder="din@email.dk" 
+                     required>
+                    <button type="submit">Tilmeld</button>
+                </form>
+            </div>
+
+            <div class="footer-brand">
+                <h3>StilBevidst</h3>
+                <p>Et univers for miljøbevidste stilvalg.</p>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Følg med</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 StilBevidst · Designet med omtanke</p>
+        </div>
+    </footer>
 
   
 

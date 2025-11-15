@@ -15,10 +15,20 @@
   font-weight: 500;
   font-style: normal;
 }
-/* Sæt kun sidebaggrund på body (ikke på alle elementer) */
-body { background-color: #F4F1EC; }
 
-img { max-width: 100%; display: block; }
+body { 
+  background-color: #F4F1EC; 
+}
+
+/* Fokusmarkering (tilgængelighed) */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #BE67A2;
+  outline-offset: 2px;
+}
+
+img { 
+  max-width: 100%; 
+  display: block; }
 
 main { margin: 0; }
 
@@ -27,40 +37,67 @@ main { margin: 0; }
   position: absolute !important;
   width: 1px; height: 1px;
   margin: -1px; padding: 0;
-  overflow: hidden; clip: rect(0 0 0 0); border: 0;
+  overflow: hidden; clip: rect(0 0 0 0); 
+  border: 0;
 }
 
 /* Generelle sektioner */
-section { margin-bottom: 3em; font-size: 20px; padding: 4rem 1.5rem; border: 0; }
-.container { max-width: 900px; margin: 0 auto; text-align: center; }
+section { 
+  margin-bottom: 3em; 
+  font-size: 20px; 
+  padding: 4rem 1.5rem; 
+  border: 0; 
+}
+  
+.container { max-width: 900px; 
+  margin: 0 auto; 
+  text-align: center;
+}
 
 /* ----------- HEADER / NAV ----------- */
 header {
   background-color: #F4F1EC;
   padding: 10px 40px;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
   width: 100%;
 }
 
-/* Logo */
-.logo-button img { height: 120px; width: auto; }
-.logo-button { display: inline-block; transition: transform 0.3s ease; }
-.logo-button:hover { transform: scale(1.05); }
+.logo-button img { 
+  height: 120px; 
+  width: auto; 
+}
+
+.logo-button {
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+}
+
+.logo-button:hover { 
+  transform: scale(1.05); 
+}
 
 /* Navigation */
 nav ul {
   list-style: none;
-  display: flex; justify-content: center;
-  gap: 40px; padding: 0; margin: 0;
+  display: flex; 
+  justify-content: center;
+  gap: 40px; 
+  padding: 0; 
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #1B3200;
-  font-size: 20px; font-weight: 500;
+  font-size: 20px; 
+  font-weight: 500;
   transition: color 0.2s ease;
 }
-nav a:hover { color: #BE67A2; }
+nav a:hover { 
+  color: #BE67A2; 
+}
 
 nav a.active {
   border-bottom: 2px solid #1B3200;
@@ -78,31 +115,39 @@ nav a.active:hover {
 
 /* Bars-knap */
 #bars {
-  background: none; border: none;
-  color: #C370A6; font-size: 28px; cursor: pointer;
+  background: none; 
+  border: none;
+  color: #C370A6; 
+  font-size: 28px; 
+  cursor: pointer;
 }
 
-/* ----------- HERO SECTION ----------- */
+/* ----------- INDEX SIDE ----------- */
 .hero {
   position: relative;
-  width: 100vw; height: 72vh;
-  margin: 0; padding: 0; overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
+  width: 100vw; 
+  height: 72vh;
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   background:
     linear-gradient(rgba(20, 30, 20, 0.50), rgba(20, 30, 20, 0.50)),
     url("../img/hero.png") center/cover no-repeat;
 }
 
-/* Hero tekstindhold */
 .hero-content {
   max-width: 720px;
   color: #FFFFFF;
   text-align: center;
   text-shadow: 0 2px 8px rgba(0,0,0,0.35);
-  display: flex; flex-direction: column; align-items: center;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 
-/* Overskrift */
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.3;
@@ -110,7 +155,6 @@ nav a.active:hover {
   font-weight: 700;
 }
 
-/* Brødtekst */
 .hero p {
   font-size: clamp(1rem, 2.2vw, 1.25rem);
   line-height: 1.7;
@@ -118,7 +162,6 @@ nav a.active:hover {
   opacity: 0.98;
 }
 
-/* CTA-knap */
 .hero-btn {
   background-color: #1B3200;
   color: #FFFFFF;
@@ -128,25 +171,38 @@ nav a.active:hover {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-.hero-btn:hover { background-color: #BE67A2; color: #FFFFFF; }
 
+.hero-btn:hover { 
+  background-color: #BE67A2; 
+  color: #FFFFFF; 
+}
 
-/* ----------- INDHOLDSSEKTIONER ----------- */
-.intro, .inspiration, .about, .cta { color: #1B3200; }
+.intro, .inspiration, .about, .cta { 
+  color: #1B3200; 
+  text-align: center;
+}
 
-.inspiration ul { background-color: #FFFFFF; list-style: none; padding: 1em; margin: 2rem 0 0 0; }
-.inspiration li { margin: 0.8rem 0; font-size: 1.1rem; }
+.inspiration ul { 
+  background-color: #FFFFFF; 
+  list-style: none; 
+  padding: 1em; 
+  margin: 2rem 0 0 0; 
+}
+
+.inspiration li { 
+  margin: 0.8rem 0; 
+  font-size: 1.1rem;
+}
 
 li a {
   color: #1B3200;          
-  text-decoration: none;   /* fjerner understregning */
+  text-decoration: none;   
   font-weight: 500;
 }
 
 li a:hover {
   color: #BE67A2;         
 }
-
 
 /* CTA (grøn baggrund) */
 .cta {
@@ -159,68 +215,229 @@ li a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* ----------- BLOG (LISTE) ----------- */
-.blog-hero { background-color: #FFFFFF; color:  #1B3200; }
-.blog-hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
-.blog-hero p {
-  font-size: 1.1rem; line-height: 1.6;
-  max-width: 700px; margin: 0 auto; color: #1B3200;
+/* ----------- BLOGLISTE SIDE ----------- */
+.blog-hero { 
+  background-color: #FFFFFF; 
+  color:  #1B3200; 
+  text-align: center;
 }
 
-.blog-list { padding: 2rem 1.5rem 4rem; }
+.blog-hero h1 { 
+  font-size: 2.4rem; 
+  margin-bottom: 1rem; 
+}
+
+.blog-hero p {
+  font-size: 1.1rem; 
+  line-height: 1.6;
+  max-width: 700px; 
+  margin: 0 auto; 
+  color: #1B3200;
+}
+
+.blog-list { 
+  padding: 2rem 1.5rem 4rem; 
+}
+
 .blog-card {
   text-align: left;
-  max-width: 700px; margin: 0 auto 2rem;
+  max-width: 700px; 
+  margin: 0 auto 2rem;
   padding: 1.5rem 1.5rem 1.2rem;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
-.blog-card h2 { font-size: 1.6rem; color: #1B3200; margin-bottom: 0.4rem; }
-.blog-card p { font-size: 1rem; line-height: 1.6; color: #1B3200; margin-bottom: 0.6rem; }
+
+.blog-card h2 { 
+  font-size: 1.6rem; 
+  color: #1B3200; 
+  margin-bottom: 0.4rem; 
+}
+
+.blog-card p { 
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #1B3200; 
+  margin-bottom: 0.6rem; 
+}
+
 .blog-link {
   font-size: 0.95rem;
   color: #1B3200;
-  text-decoration: none; font-weight: 600;
-  border-bottom: 1px solid #1B3200; padding-bottom: 2px;
+  text-decoration: none; 
+  font-weight: 600;
+  border-bottom: 1px solid #1B3200; 
+  padding-bottom: 2px;
 }
-.blog-link:hover { color: #BE67A2; border-color: #BE67A2; }
 
-/* ----------- BLOGPOST ----------- */
-.article-hero { color: #1B3200; }
-.article-label {
-  font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;
-  color: #8E8276; margin-bottom: 0.5rem;
+.blog-link:hover { 
+  color: #BE67A2; 
+  border-color: #BE67A2; 
 }
-.article-hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
-.article-intro {
-  font-size: 1.05rem; max-width: 720px; margin: 0 auto;
-  line-height: 1.7; color: #1B3200;
-}
-.article-content { padding: 2rem 1.5rem 4rem; color: #1B3200; }
-.article-content h2 { font-size: 1.4rem; margin: 1.8rem 0 0.4rem; }
-.article-content p { font-size: 1rem; line-height: 1.7; color: #1B3200; }
-.article-outro { margin-top: 1.8rem; font-weight: 500; }
-.blog-back-link {
-  display: inline-block; margin-top: 1.5rem; font-size: 0.95rem;
-  color: #1B3200; text-decoration: none;
-  border-bottom: 1px solid #1B3200; padding-bottom: 2px;
-}
-.blog-back-link:hover { color: #BE67A2; border-color: #BE67A2; }
 
-/* ----------- KONTAKT ----------- */
-.kontakt-hero { color: #1B3200; }
-.kontakt-hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
+/* --- BLOGPOST / GUIDE UNDERSIDE --- */
+.guide-hero {
+  color: #1B3200;
+  padding: 4rem 1.5rem 2rem;
+}
+
+.guide-hero-layout {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.guide-text {
+  flex: 0 0 40%;
+  text-align: left;
+}
+
+.guide-image-wrapper {
+  flex: 1;
+}
+
+.guide-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.guide-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  color: #8E8276;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.guide-hero h1 {
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.guide-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: none;
+}
+
+.guide-content {
+  padding: 0.5rem 1.5rem 4rem;
+  color: #1B3200;
+}
+
+.guide-content .container{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.guide-content h2:first-of-type {
+  margin-top: 0rem;
+}
+
+.guide-content h2 {
+  font-size: 1.4rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.guide-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.guide-outro {
+  margin-top: 1.8rem;
+  font-weight: 500;
+}
+
+.kilder {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  color:#1B3200;
+}
+
+.kilder h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.kilde-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kilde-liste li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.kilde-liste a {
+  color: #1B3200;
+  text-decoration: none;
+  border-bottom: 1px solid #1B3200;
+  padding-bottom: 2px;
+}
+
+.kilde-liste a:hover {
+  color: #BE67A2;
+  border-color: #BE67A2;
+}
+
+.blog-back-link { 
+  display: inline-block; 
+  margin-top: 2rem; 
+  font-size: 0.95rem; 
+  color: #1B3200;
+}
+
+.blog-back-link:hover { 
+  color: #BE67A2; 
+  border-color: #BE67A2; 
+}
+
+/* ----------- KONTAKTSIDE ----------- */
+.kontakt-hero { 
+  color: #1B3200; 
+}
+
+.kontakt-hero h1 { 
+  font-size: 2.4rem; 
+  margin-bottom: 1rem; 
+}
+
 .kontakt-hero p {
-  font-size: 1.05rem; line-height: 1.6;
-  max-width: 700px; margin: 0 auto; color: #1B3200;
+  font-size: 1.05rem; 
+  line-height: 1.6;
+  max-width: 700px; 
+  margin: 0 auto; 
+  color: #1B3200;
 }
-.kontakt-section { padding: 2rem 1.5rem 4rem; }
+
+.kontakt-section { 
+  padding: 2rem 1.5rem 4rem; 
+}
 .kontakt-form {
-  max-width: 500px; margin: 0 auto; text-align: left;
-  display: flex; flex-direction: column; gap: 0.8rem;
+  max-width: 500px; 
+  margin: 0 auto; 
+  text-align: left;
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.8rem;
 }
-.kontakt-form label { font-size: 0.95rem; color: #1B3200; }
-.kontakt-form input,
-.kontakt-form textarea {
+
+.kontakt-form label { 
+  font-size: 0.95rem; 
+  color: #1B3200; 
+}
+
+.kontakt-form input, .kontakt-form textarea {
   width: 100%;
   padding: 0.7rem 0.8rem;
   border-radius: 6px;
@@ -228,23 +445,29 @@ li a:hover {
   font-size: 0.95rem;
   background-color: #FFFFFF;
 }
-.kontakt-form input:focus,
-.kontakt-form textarea:focus {
+
+.kontakt-form input:focus, .kontakt-form textarea:focus {
   outline: 2px solid #BE67A2;
   border-color: #BE67A2;
 }
+
 .kontakt-btn {
   margin-top: 0.8rem;
   padding: 0.8rem 1.6rem;
-  border: none; border-radius: 6px;
+  border: none; 
+  border-radius: 6px;
   background-color: #1B3200;
   color: #FFFFFF;
-  font-weight: 600; font-size: 1rem;
+  font-weight: 600; 
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
-.kontakt-btn:hover { background-color: #BE67A2; transform: translateY(-1px); }
 
+.kontakt-btn:hover { 
+  background-color: #BE67A2; 
+  transform: translateY(-1px); 
+}
 
 /* ----------- FOOTER ----------- */
 .footer { 
@@ -255,14 +478,73 @@ li a:hover {
   border-top: none;
 }
 
-/* Container layout */
 .footer .footer-container {
-  max-width: 1000px; margin: 0 auto;
-  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;
-  gap: 2rem; text-align: left;
+  max-width: 1000px; 
+  margin: 0 auto;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 2rem; 
+  text-align: left;
 }
 
-/* Brand & tekst */
+/* --- FOOTER NEWSLETTER --- */
+.footer-newsletter {
+  flex: 1;
+  min-width: 260px;
+}
+
+.footer-newsletter h4 {
+  color: #F4F1EC;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-newsletter p {
+  color: #F4F1EC;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.7rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.6);
+  background-color: #F4F1EC;
+  color: #1B3200;
+  font-size: 1.1rem;
+}
+
+.newsletter-form input:focus-visible {
+  outline: 2px solid #BE67A2;
+  border-color: #BE67A2;
+}
+
+.newsletter-form button {
+  flex: 0 0 18%;
+  padding: 0.8rem 1.2rem;
+  background-color: #1B3200;
+  border: none;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #BE67A2;
+}
+
 .footer h3, .footer h4 {
   color: #F4F1EC;
   margin-bottom: 0.8rem;
@@ -273,35 +555,43 @@ li a:hover {
   margin: 0.4rem 0 1rem;
   line-height: 1.6;
 }
-.footer ul { list-style: none; margin: 0; padding: 0; }
+.footer ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
 .footer a {
   color: #F4F1EC;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.footer a:hover { color: #BE67A2; }
+
+.footer a:hover { 
+  color: #BE67A2; 
+}
 
 .footer-bottom {
   text-align: center;
-  border-top: 1px solid rgba(249, 247, 243, 0.25); /* let adskillelse */
-  margin-top: 2rem; padding-top: 1rem;
-  font-size: 0.85rem; color: #F4F1EC;
+  border-top: 1px solid rgba(249, 247, 243, 0.25); 
+  margin-top: 2rem; 
+  padding-top: 1rem;
+  font-size: 0.85rem; 
+  color: #F4F1EC;
 }
 
 /* ----------- DESKTOP ----------- */
 @media screen and (min-width: 769px) {
   #bars { display: none; }
-
-  section:nth-of-type(1) { display: flex; gap: 2em; }
-  section:nth-of-type(1) div { width: 50%; }
-  section:nth-of-type(1) img { width: 50%; }
 }
 
 /* ----------- TABLET & MOBIL ----------- */
 @media screen and (max-width: 768px) {
-  nav { display: none; }
+  nav { display: none; 
+  }
 
-  header { justify-content: space-between; }
+  header { justify-content: space-between; 
+  }
 
   .show {
     display: block;
@@ -312,17 +602,53 @@ li a:hover {
     text-align: center;
     z-index: 9999;
   }
+
   .show ul {
-    display: flex; flex-direction: column;
-    gap: 20px; padding: 1em 0;
+    display: flex; 
+    flex-direction: column;
+    gap: 155px; padding: 1em 0;
+    font-size: larger;
   }
 
-  .logo-button img { height: 120px; }
+  .show ul li a {
+    font-size: 2rem;  
+    font-weight: 800;   
+  }
 
-  .hero { height: 60vh; }
-  .hero h1 { font-size: 1.8rem; }
-  .hero p { font-size: 1rem; }
+  .logo-button img { 
+    height: 120px; 
+  }
 
+  .hero { 
+    height: 60vh; 
+  }
+
+  .hero h1 { 
+    font-size: 1.8rem; 
+  }
+
+  .hero p { 
+    font-size: 1rem; 
+  }
+
+  .guide-hero-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guide-text {
+    text-align: center;
+  }
+
+  .guide-intro {
+    margin: 0 auto;
+  }
+
+  .guide-image-wrapper {
+    width: 100%;
+    max-width: 430px;
+    margin-top: 1.5rem;
+  }
   .footer .footer-container {
     flex-direction: column;
     align-items: center;
