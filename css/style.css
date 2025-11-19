@@ -543,12 +543,12 @@ li a:hover {
 }
 
 .footer h3, .footer h4 {
-  color: #F4F1EC;
+  color: #FFFFFF;
   margin-bottom: 0.8rem;
   letter-spacing: 0.5px;
 }
 .footer p {
-  color: #F4F1EC;
+  color: #FFFFFF;
   margin: 0.4rem 0 1rem;
   line-height: 1.6;
 }
@@ -559,7 +559,7 @@ li a:hover {
 }
 
 .footer a {
-  color: #F4F1EC;
+  color: #FFFFFF;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -574,7 +574,7 @@ li a:hover {
   margin-top: 2rem; 
   padding-top: 1rem;
   font-size: 0.85rem; 
-  color: #F4F1EC;
+  color: #FFFFFF;
 }
 
 /* ----------- DESKTOP ----------- */
