@@ -3,7 +3,7 @@
   --green: #1B3200;   /* Mørkegrøn (god kontrast) */
   --lilac: #BE67A2;   /* Lilla accent */
   --sand:  #F4F1EC;   /* Warm sand baggrund */
-  --grey:  #7E7267;   /* Footer-grå */
+  --grey:  #625750;   /* Footer-grå */
   --white: #FFFFFF;   /* Tekst og bokse */
 }
 
@@ -305,7 +305,7 @@ li a:hover {
 .guide-label {
   font-size: 0.85rem;
   letter-spacing: 0.25em;
-  color: #7E7267;
+  color: #625750;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -468,7 +468,7 @@ li a:hover {
 
 /* ----------- FOOTER ----------- */
 .footer { 
-  background-color: #7E7267;
+  background-color: #625750;
   color: #FFFFFF;
   padding: 3rem 1.5rem 2rem;
   font-size: 0.95rem;
