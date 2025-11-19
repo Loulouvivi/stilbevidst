@@ -469,7 +469,7 @@ li a:hover {
 /* ----------- FOOTER ----------- */
 .footer { 
   background-color: #7E7267;
-  color: #F4F1EC;
+  color: #FFFFFF;
   padding: 3rem 1.5rem 2rem;
   font-size: 0.95rem;
   border-top: none;
@@ -493,13 +493,13 @@ li a:hover {
 }
 
 .footer-newsletter h4 {
-  color: #F4F1EC;
+  color: #FFFFFF;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .footer-newsletter p {
-  color: #F4F1EC;
+  color: #FFFFFF;
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
